@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset and generated outputs
+Videos.zip
+data/Videos/
+data/data/
+data/frames/
+data/train/
+data/test/
+data/*.pth
+data/*.pt
+data/*.ckpt
+data/submission.csv
+
+# Local generated CSVs can be recreated by the notebook
+data/unified_dataset.csv
+data/train.csv
+data/val.csv
+data/test.csv
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
