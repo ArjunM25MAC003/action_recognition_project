@@ -18,7 +18,7 @@ Important note: the provided dataset may not contain videos for `crowd_anomaly`.
 
 ```text
 action_recognition_project/
-├── action_project_clean_final.ipynb   # Main notebook workflow
+├── action_recognition_project.ipynb   # Main notebook workflow
 ├── Videos.zip                         # Original dataset archive
 ├── data/
 │   ├── Videos/                        # Extracted video folders
