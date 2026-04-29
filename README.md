@@ -1,6 +1,6 @@
 # Action Recognition for Real-Time Safety Monitoring
 
-This project builds a video action recognition system for short CCTV-style clips. The main workflow is in `action_project_clean_final.ipynb`.
+This project builds a video action recognition system for short CCTV-style clips. The main workflow is in `action_recognition_project.ipynb`.
 
 The notebook trains a 5-class safety monitoring classifier:
 
