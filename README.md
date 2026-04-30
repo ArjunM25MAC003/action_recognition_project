@@ -41,6 +41,26 @@ Videos/
 ├── hit/
 └── ... (one folder per action category)
 ```
+Uniform Temporal Sampling
+To optimize processing, the system does not analyze every frame. Instead, it extracts exactly 12 frames spaced evenly across the duration of a clip. This ensures the model sees the beginning, middle, and end of an action regardless of video length.  
+
+The Motion Channel
+A key feature of this architecture is the Motion Map. By calculating the absolute difference between consecutive frames, the model highlights "hotspots" of high movement.
+
+Fight/Panic: Shows intense, localized hotspots.  
+
+Normal Activity: The motion map remains "cool" or quiet.  
+
+Model Configuration
+Input Resolution: 112x112  
+
+Sequence Length: 12 frames  
+
+Batch Size: 8  
+
+Learning Rate: 3e-4  
+
+Backbone: ResNet18 (modified for 4-channel input)
 
 3. Build CSV metadata (from the notebook):
 - The notebook contains `build_dataset_csv(video_root, output_csv_path)` which scans `Videos/`, maps folders to labels, and writes a `unified_dataset.csv`.
