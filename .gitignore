@@ -1,0 +1,22 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.vscode/
+*.egg-info/
+dist/
+build/
+
+# Data and large files
+/data/
+Videos/
+*.zip
+
+# Model checkpoints and outputs
+checkpoints/
+models/
+outputs/
+
+# OS files
+Thumbs.db
+.DS_Store
